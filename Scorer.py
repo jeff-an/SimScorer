@@ -20,6 +20,7 @@ ds = DocSim(model,stopwords=stopwords)
 ''' Receive the user description as doc1 '''
 def computeScore(doc1, doc2):
   words1 = word_tokenize(doc1)
+  print("DOC2: ", doc2)
   words2 = word_tokenize(doc2)
   stems1 = [ps.stem(word) for word in words1]
   stems2 = [ps.stem(word) for word in words2]
